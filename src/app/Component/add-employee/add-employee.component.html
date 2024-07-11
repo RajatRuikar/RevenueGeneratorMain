@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<form (ngSubmit)="onSubmit()">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <td scope="col">Attribute</td>
+                <td style="padding-left: 13%;">Enter Details</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>⦾</td>
+                <td>Employee Name</td>
+                <td><input type="text" name="name" [(ngModel)]="employee.employeeName" required id="name"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Role</td>
+                <td><input type="text" name="role" [(ngModel)]="employee.employeeRole" required id="role"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Phone Number</td>
+                <td><input type="text" name="phone" [(ngModel)]="employee.employeePhoneNumber" required id="phone"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Email </td>
+                <td><input type="text" name="email" [(ngModel)]="employee.employeeEmail" required id="email"></td>
+            </tr>
+            
+            <tr>
+                <td>⦾</td>
+                <td>Address</td>
+                <td><input type="text" name="address" [(ngModel)]="employee.employeeAddress" required id="address"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Salary</td>
+                <td><input type="text" name="salary" [(ngModel)]="employee.employeeSalary" required id="salary"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Date of Joining</td>
+                <td><input type="date" name="dateOfJoining" [(ngModel)]="employee.dateOfJoining" required id="dateOfJoining"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary" style="margin-bottom: 18px;">Save Details</button>
+    <br>
+    <a class="btn btn-primary" style="margin-bottom: 18px;" routerLink="/employee">Go Back</a>
+</form>

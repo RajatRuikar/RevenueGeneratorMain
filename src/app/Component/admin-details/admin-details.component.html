@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <td scope="col">Attribute</td>
+                <td>Details</td>
+            </tr>
+        </thead>
+        <tbody *ngFor="let y of admin | async;">
+            <tr>
+                <td>⦾</td>
+                <td>Admin Name</td>
+                <td>{{y.adminName}}</td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Admin Email </td>
+                <td>{{y.adminEmail}}</td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Phone Number</td>
+                <td>{{y.adminContactNumber}}</td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Total Investment</td>
+                <td>{{y.adminInverstment}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <a class="btn btn-primary" style="margin-bottom: 18px;" routerLink="/admin">Go Back</a>
+
+</div>

@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <td scope="col">ID</td>
+                <td scope="col">Name</td>
+                <td scope="col">Phone</td>
+                <td scope="col">Email</td>
+                <td scope="col">Address</td>
+                <td scope="col">Update</td>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr *ngFor="let y of customer | async;">
+                <td>⦾</td>
+                <td>{{y.customerId}}</td>
+                <td>{{y.customerName}}</td>
+                <td>{{y.customerPhoneNumber}}</td>
+                <td>{{y.customerEmail}}</td>
+                <td>{{y.customerAddress}}</td>
+                <td><button type="button" class="btn btn-warning" (click)="editCustomer(y)"><b>Update</b></button></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <a class="btn btn-primary" style="margin-bottom: 18px;" routerLink="/customer">Go Back</a>
+</div>

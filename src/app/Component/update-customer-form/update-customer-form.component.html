@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+
+<form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <td scope="col">Attribute</td>
+                <td style="padding-left: 13%;">Enter Details</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>⦾</td>
+                <td>Customer ID</td>
+                <td><input id="customerId" type="text" formControlName="customerId" readonly></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Customer Name</td>
+                <td><input id="customerName" type="text" formControlName="customerName"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Phone Number</td>
+                <td><input id="customerPhoneNumber" type="text" formControlName="customerPhoneNumber"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Email</td>
+                <td><input id="customerEmail" type="email" formControlName="customerEmail"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Address</td>
+                <td><input id="customerAddress" type="text" formControlName="customerAddress"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary" style="margin-bottom: 18px;">Save Details</button>
+    <br>
+    <a class="btn btn-primary" style="margin-bottom: 18px;" routerLink="/updateCustomer">Go Back</a>
+</form>

@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <td scope="col">Data</td>
+        <td scope="col">Amount</td>
+      </tr>
+    </thead>
+    <tbody *ngIf="revenue | async as revenue">
+      <tr>
+        <td>⦾</td>
+        <td>Total Investment</td>
+        <td>{{revenue.investment}}</td>
+      </tr>
+      <tr>
+        <td>⦾</td>
+        <td>Employee Salary</td>
+        <td>{{revenue.sumOfEmployeeSalary}}</td>
+      </tr>
+      <tr>
+        <td>⦾</td>
+        <td>Material Investment</td>
+        <td>{{revenue.investmentOnMaterial}}</td>
+      </tr>
+      <tr>
+        <td>⦾</td>
+        <td>Payment Recieved</td>
+        <td>{{revenue.paymentRecieve}}</td>
+      </tr>
+      <tr>
+        <td>⦾</td>
+        <td>Payment Paid</td>
+        <td>{{revenue.paymentPaid}}</td>
+      </tr>
+      <tr>
+        <td>⦾</td>
+        <td>Payment Pending</td>
+        <td>{{revenue.paymentPending}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <a class="btn btn-primary" style="margin-bottom: 18px;" routerLink="">Home</a>
+</div>

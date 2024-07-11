@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr> 
+                <th scope="col"></th>
+                <td scope="col">ID</td>
+                <td scope="col">Name</td>
+                <td scope="col">Role</td>
+                <td scope="col">Phone</td>
+                <td scope="col">Email</td>
+                <td scope="col">Address</td>
+                <td scope="col">Salary</td>
+                <td scope="col">Date of Joining</td>
+                
+                <td scope="col">Update</td>
+
+
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let y of employee | async;">
+                <td>⦾</td>
+                <td>{{y.employeeId}}</td>
+                <td>{{y.employeeName}}</td>
+                <td>{{y.employeeRole}}</td>
+                <td>{{y.employeePhoneNumber}}</td>
+                <td>{{y.employeeEmail}}</td>
+                <td>{{y.employeeAddress}}</td>
+                <td>{{y.employeeSalary}}</td>
+                <td>{{y.dateOfJoining}}</td>
+                <td><button type="button" class="btn btn-warning" (click)="editEmployee(y)"><b>Update</b></button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <a class="btn btn-primary" style="margin-bottom: 18px;" routerLink="/employee">Go Back</a>
+</div>

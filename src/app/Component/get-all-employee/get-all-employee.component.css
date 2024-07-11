@@ -1,0 +1,20 @@
+
+div{
+    margin: 2% 10%;
+}
+td{
+    font-size: 30px;
+}
+table{
+    background: linear-gradient(to top, #00ffff2b 0%, #ffcccc5b 80%);
+}
+td{
+    font-size: 18px;
+}
+.btn-primary{
+    background-color: rgba(255, 166, 0, 0.574);
+    border-color:rgba(255, 166, 0, 0.785);
+}
+.btn-primary:hover{
+    background-color: rgba(99, 86, 62, 0.556);
+}

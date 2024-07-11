@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<form (ngSubmit)="onSubmit()">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <td scope="col">Attribute</td>
+                <td style="padding-left: 13%;">Enter Details</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>⦾</td>
+                <td>Retailer Name</td>
+                <td><input type="text" name="name" [(ngModel)]="retailer.retailerName" required id="name"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Phone Number</td>
+                <td><input type="text" name="phone" [(ngModel)]="retailer.retailerContactNumber" required id="phone"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Email </td>
+                <td><input type="text" name="email" [(ngModel)]="retailer.retailerEmail" required id="email"></td>
+            </tr>
+            
+            <tr>
+                <td>⦾</td>
+                <td>Additional Details</td>
+                <td><input type="text" name="details" [(ngModel)]="retailer.retailerAdditionalDetails" required id="details"></td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary" style="margin-bottom: 18px;">Save Details</button>
+    <br>
+    <a class="btn btn-primary" style="margin-bottom: 18px;" routerLink="/retailer">Go Back</a>
+</form>

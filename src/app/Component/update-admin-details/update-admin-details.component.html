@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<form (ngSubmit)="onSubmit()">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <td scope="col">Attribute</td>
+                <td style="padding-left: 13%;">Enter Details</td>
+            </tr>
+        </thead>
+        <tbody *ngFor="let a of admin | async;">
+            <tr>
+                <td>⦾</td>
+                <td>Admin Name</td>
+                <td><input type="text" [(ngModel)]="a.adminName" name="name" required id="name"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Admin Email</td>
+                <td><input type="text" [(ngModel)]="a.adminEmail" name="email" required id="email"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Phone Number</td>
+                <td><input type="text" [(ngModel)]="a.adminContactNumber" name="phone" required id="phone"></td>
+            </tr>
+            <tr>
+                <td>⦾</td>
+                <td>Total Investment</td>
+                <td><input type="text" [(ngModel)]="a.adminInverstment" name="investment" required id="investment"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary" style="margin-bottom: 18px;">Save Details</button>
+    <br>
+    <a class="btn btn-primary" style="margin-bottom: 18px;" routerLink="/admin">Go Back</a>
+</form>
