@@ -3,17 +3,19 @@ export class Revenue{
 	gainOrLoss: number;
 	sumOfEmployeeSalary: number;
 	investmentOnMaterial: number;
-	paymentRecieve: number;
-	paymentPending: number;
-	paymentPaid: number;
+	materialPaymentPaid:number;
+    materialPaymentPending:number;
+    customerPaymentRecieve:number;
+    customerPaymentPending:number;
 
     constructor(){
         this.investment=0;
         this.gainOrLoss=0;
         this.sumOfEmployeeSalary=0;
         this.investmentOnMaterial=0;
-        this.paymentRecieve=0;
-        this.paymentPending=0;
-        this.paymentPaid=0;
+        this.materialPaymentPaid=0;
+        this.materialPaymentPending=0;
+        this.customerPaymentRecieve=0;
+        this.customerPaymentPending=0;
     }
 }

@@ -7,9 +7,9 @@ export class Admin{
 
     constructor(){
         this.adminId=1;
-        this.adminName="rajat";
-        this.adminEmail="@gmail.com";
-        this.adminContactNumber="5";
+        this.adminName="";
+        this.adminEmail="";
+        this.adminContactNumber="";
         this.adminInverstment=0;
     }
 }

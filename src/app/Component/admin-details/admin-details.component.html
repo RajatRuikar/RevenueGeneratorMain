@@ -8,26 +8,26 @@
                 <td>Details</td>
             </tr>
         </thead>
-        <tbody *ngFor="let y of admin | async;">
+        <tbody *ngIf="admin | async as admin">
             <tr>
                 <td>⦾</td>
                 <td>Admin Name</td>
-                <td>{{y.adminName}}</td>
+                <td>{{admin.adminName}}</td>
             </tr>
             <tr>
                 <td>⦾</td>
                 <td>Admin Email </td>
-                <td>{{y.adminEmail}}</td>
+                <td>{{admin.adminEmail}}</td>
             </tr>
             <tr>
                 <td>⦾</td>
                 <td>Phone Number</td>
-                <td>{{y.adminContactNumber}}</td>
+                <td>{{admin.adminContactNumber}}</td>
             </tr>
             <tr>
                 <td>⦾</td>
                 <td>Total Investment</td>
-                <td>{{y.adminInverstment}}</td>
+                <td>{{admin.adminInverstment}}</td>
             </tr>
         </tbody>
     </table>
