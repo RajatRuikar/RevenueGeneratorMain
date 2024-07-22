@@ -10,20 +10,20 @@ import { Admin } from '../model/Admin';
   styleUrls: ['./update-admin-details.component.css'] // Update if you have CSS file
 })
 export class UpdateAdminDetailsComponent implements OnInit {
-  public admin: Observable<Admin[]> = of([]);
-  private adminList: Admin[] = [];
+  public admin!: Observable<Admin>;
+  private adminList!: Admin;
 
   constructor(private service: AdminService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
-    this.service.getAdminDetails().subscribe((admins: Admin[]) => {
+    this.service.getAdminDetails().subscribe((admins: Admin) => {
       this.adminList = admins;
       this.admin = of(this.adminList);
     });
   }
 
   onSubmit() {
-    this.adminList.forEach(admin => {
+    this.admin.subscribe(admin => {
       this.updateAdmin(admin);
     });
   }

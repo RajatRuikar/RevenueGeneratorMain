@@ -12,7 +12,7 @@ import { Admin } from '../model/Admin';
 export class AdminDetailsComponent implements OnInit{
   constructor(private service: AdminService, private router:Router) { }
   
-  public admin: Observable<Admin[]> = of([]);
+  admin!: Observable<Admin>;
   
   onSubmit() {
     this.router.navigate(['admin']);
@@ -23,7 +23,9 @@ export class AdminDetailsComponent implements OnInit{
   }
 
   getAll() {
+    // console.log(this.admin);
     this.admin = this.service.getAdminDetails();
+    // console.log(this.admin);
   }
 
 }

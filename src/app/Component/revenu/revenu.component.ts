@@ -12,8 +12,10 @@ export class RevenuComponent implements OnInit{
   constructor(private service: RevenueService) { }
 
   // public revenue: Observable<Revenue[]> =of([]);
+
   revenue!: Observable<Revenue>;
-  r = new Revenue();
+
+  // r = new Revenue();
 
   ngOnInit(){
     // this.revenue = this.service.getRevenue();
