@@ -34,6 +34,7 @@ import { HomeComponent } from './Component/home/home.component';
 import { UpdateCustomerFormComponent } from './Component/update-customer-form/update-customer-form.component';
 import { UpdateEmployeeFormComponent } from './Component/update-employee-form/update-employee-form.component';
 import { UpdateRetailerFormComponent } from './Component/update-retailer-form/update-retailer-form.component';
+import { NavbarcustomerComponent } from './Component/navbarcustomer/navbarcustomer.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { UpdateRetailerFormComponent } from './Component/update-retailer-form/up
     HomeComponent,
     UpdateCustomerFormComponent,
     UpdateEmployeeFormComponent,
-    UpdateRetailerFormComponent
+    UpdateRetailerFormComponent,
+    NavbarcustomerComponent
   ],
   imports: [
     BrowserModule,
