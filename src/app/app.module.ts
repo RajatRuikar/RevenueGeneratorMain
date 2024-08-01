@@ -35,6 +35,10 @@ import { UpdateCustomerFormComponent } from './Component/update-customer-form/up
 import { UpdateEmployeeFormComponent } from './Component/update-employee-form/update-employee-form.component';
 import { UpdateRetailerFormComponent } from './Component/update-retailer-form/update-retailer-form.component';
 import { NavbarcustomerComponent } from './Component/navbarcustomer/navbarcustomer.component';
+import { CustomerprofiledeatilsComponent } from './Component/customerprofiledeatils/customerprofiledeatils.component';
+import { CustomerproductsComponent } from './Component/customerproducts/customerproducts.component';
+import { CustomerpastorderComponent } from './Component/customerpastorder/customerpastorder.component';
+import { CustomercartdeatilsComponent } from './Component/customercartdeatils/customercartdeatils.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +72,11 @@ import { NavbarcustomerComponent } from './Component/navbarcustomer/navbarcustom
     UpdateCustomerFormComponent,
     UpdateEmployeeFormComponent,
     UpdateRetailerFormComponent,
-    NavbarcustomerComponent
+    NavbarcustomerComponent,
+    CustomerprofiledeatilsComponent,
+    CustomerproductsComponent,
+    CustomerpastorderComponent,
+    CustomercartdeatilsComponent
   ],
   imports: [
     BrowserModule,
