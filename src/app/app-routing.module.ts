@@ -26,6 +26,11 @@ import { HomeComponent } from './Component/home/home.component';
 import { UpdateCustomerFormComponent } from './Component/update-customer-form/update-customer-form.component';
 import { UpdateRetailerFormComponent } from './Component/update-retailer-form/update-retailer-form.component';
 import { UpdateEmployeeFormComponent } from './Component/update-employee-form/update-employee-form.component';
+import { NavbarcustomerComponent } from './Component/navbarcustomer/navbarcustomer.component';
+import { CustomerprofiledeatilsComponent } from './Component/customerprofiledeatils/customerprofiledeatils.component';
+import { CustomerpastorderComponent } from './Component/customerpastorder/customerpastorder.component';
+import { CustomerproductsComponent } from './Component/customerproducts/customerproducts.component';
+import { CustomercartdeatilsComponent } from './Component/customercartdeatils/customercartdeatils.component';
 
 const routes: Routes = [
   {
@@ -99,15 +104,30 @@ const routes: Routes = [
   }, {
     path: 'deleteRetailer',
     component: DeleteRetailerComponent
-  },{
+  }, {
     path: 'updateCustomerForm',
     component: UpdateCustomerFormComponent
-  },{
+  }, {
     path: 'updateRetailerForm',
-    component : UpdateRetailerFormComponent
-  },{
+    component: UpdateRetailerFormComponent
+  }, {
     path: 'updateEmployeeForm',
-    component : UpdateEmployeeFormComponent
+    component: UpdateEmployeeFormComponent
+  }, {
+    path: 'navbarCustomer',
+    component: NavbarcustomerComponent
+  }, {
+    path: 'customerPastOrder',
+    component: CustomerpastorderComponent
+  }, {
+    path: 'customerProducts',
+    component: CustomerproductsComponent
+  },{
+    path: 'customerCartDetails',
+    component: CustomercartdeatilsComponent
+  },{
+    path: 'customerDetails',
+    component: CustomerprofiledeatilsComponent
   }
 ];
 
