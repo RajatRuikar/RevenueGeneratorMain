@@ -39,6 +39,14 @@ import { CustomerprofiledeatilsComponent } from './Component/customerprofiledeat
 import { CustomerproductsComponent } from './Component/customerproducts/customerproducts.component';
 import { CustomerpastorderComponent } from './Component/customerpastorder/customerpastorder.component';
 import { CustomercartdeatilsComponent } from './Component/customercartdeatils/customercartdeatils.component';
+import { NavbaremployeeComponent } from './Component/navbaremployee/navbaremployee.component';
+import { EmployeedetailsComponent } from './Component/employeedetails/employeedetails.component';
+import { EmployeecustomerdetailsComponent } from './Component/employeecustomerdetails/employeecustomerdetails.component';
+import { EmployeecustomermanupualtaionComponent } from './Component/employeecustomermanupualtaion/employeecustomermanupualtaion.component';
+import { EmployeecustomersearchComponent } from './Component/employeecustomersearch/employeecustomersearch.component';
+import { EmployeeproductdetailsComponent } from './Component/employeeproductdetails/employeeproductdetails.component';
+import { EmployeeproductmanupulataionComponent } from './Component/employeeproductmanupulataion/employeeproductmanupulataion.component';
+import { EmployeeproductsearchComponent } from './Component/employeeproductsearch/employeeproductsearch.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +84,15 @@ import { CustomercartdeatilsComponent } from './Component/customercartdeatils/cu
     CustomerprofiledeatilsComponent,
     CustomerproductsComponent,
     CustomerpastorderComponent,
-    CustomercartdeatilsComponent
+    CustomercartdeatilsComponent,
+    NavbaremployeeComponent,
+    EmployeedetailsComponent,
+    EmployeecustomerdetailsComponent,
+    EmployeecustomermanupualtaionComponent,
+    EmployeecustomersearchComponent,
+    EmployeeproductdetailsComponent,
+    EmployeeproductmanupulataionComponent,
+    EmployeeproductsearchComponent
   ],
   imports: [
     BrowserModule,
