@@ -31,6 +31,14 @@ import { CustomerprofiledeatilsComponent } from './Component/customerprofiledeat
 import { CustomerpastorderComponent } from './Component/customerpastorder/customerpastorder.component';
 import { CustomerproductsComponent } from './Component/customerproducts/customerproducts.component';
 import { CustomercartdeatilsComponent } from './Component/customercartdeatils/customercartdeatils.component';
+import { NavbaremployeeComponent } from './Component/navbaremployee/navbaremployee.component';
+import { EmployeecustomerdetailsComponent } from './Component/employeecustomerdetails/employeecustomerdetails.component';
+import { EmployeecustomermanupualtaionComponent } from './Component/employeecustomermanupualtaion/employeecustomermanupualtaion.component';
+import { EmployeecustomersearchComponent } from './Component/employeecustomersearch/employeecustomersearch.component';
+import { EmployeedetailsComponent } from './Component/employeedetails/employeedetails.component';
+import { EmployeeproductdetailsComponent } from './Component/employeeproductdetails/employeeproductdetails.component';
+import { EmployeeproductmanupulataionComponent } from './Component/employeeproductmanupulataion/employeeproductmanupulataion.component';
+import { EmployeeproductsearchComponent } from './Component/employeeproductsearch/employeeproductsearch.component';
 
 const routes: Routes = [
   {
@@ -128,6 +136,30 @@ const routes: Routes = [
   },{
     path: 'customerDetails',
     component: CustomerprofiledeatilsComponent
+  },{
+    path:'navbarEmployee',
+    component: NavbaremployeeComponent
+  },{
+    path:'employeeAllCustomerDetails',
+    component: EmployeecustomerdetailsComponent
+  },{
+    path:'employeeCustomerUpdate',
+    component: EmployeecustomermanupualtaionComponent
+  },{
+    path:'employeeCustomerSearch',
+    component: EmployeecustomersearchComponent
+  },{
+    path:'employeeDetails',
+    component: EmployeedetailsComponent
+  },{
+    path:'employeeAllProductDeatils',
+    component: EmployeeproductdetailsComponent
+  },{
+    path:'employeeProductUpdate',
+    component: EmployeeproductmanupulataionComponent
+  },{
+    path:'employeeProductSearch',
+    component: EmployeeproductsearchComponent
   }
 ];
 
