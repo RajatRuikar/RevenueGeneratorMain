@@ -39,6 +39,8 @@ import { EmployeedetailsComponent } from './Component/employeedetails/employeede
 import { EmployeeproductdetailsComponent } from './Component/employeeproductdetails/employeeproductdetails.component';
 import { EmployeeproductmanupulataionComponent } from './Component/employeeproductmanupulataion/employeeproductmanupulataion.component';
 import { EmployeeproductsearchComponent } from './Component/employeeproductsearch/employeeproductsearch.component';
+import { EmployeeproductComponent } from './Component/employeeproduct/employeeproduct.component';
+import { EmployeecustomerComponent } from './Component/employeecustomer/employeecustomer.component';
 
 const routes: Routes = [
   {
@@ -160,6 +162,12 @@ const routes: Routes = [
   },{
     path:'employeeProductSearch',
     component: EmployeeproductsearchComponent
+  },{
+    path:'employeecustomer',
+    component: EmployeecustomerComponent
+  },{
+    path:'employeeProduct',
+    component: EmployeeproductComponent
   }
 ];
 
