@@ -47,6 +47,8 @@ import { EmployeecustomersearchComponent } from './Component/employeecustomersea
 import { EmployeeproductdetailsComponent } from './Component/employeeproductdetails/employeeproductdetails.component';
 import { EmployeeproductmanupulataionComponent } from './Component/employeeproductmanupulataion/employeeproductmanupulataion.component';
 import { EmployeeproductsearchComponent } from './Component/employeeproductsearch/employeeproductsearch.component';
+import { EmployeecustomerComponent } from './Component/employeecustomer/employeecustomer.component';
+import { EmployeeproductComponent } from './Component/employeeproduct/employeeproduct.component';
 
 @NgModule({
   declarations: [
@@ -92,7 +94,9 @@ import { EmployeeproductsearchComponent } from './Component/employeeproductsearc
     EmployeecustomersearchComponent,
     EmployeeproductdetailsComponent,
     EmployeeproductmanupulataionComponent,
-    EmployeeproductsearchComponent
+    EmployeeproductsearchComponent,
+    EmployeecustomerComponent,
+    EmployeeproductComponent
   ],
   imports: [
     BrowserModule,

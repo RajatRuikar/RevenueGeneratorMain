@@ -1,0 +1,31 @@
+.card{
+    background-color: rgba(255, 136, 0, 0.192);
+    margin: 10%;
+    align-items: center;
+}
+.card:hover{
+    background-color: rgba(255, 136, 0, 0.251);
+    color: rgba(255, 255, 255, 0.893);
+}
+
+.btn-primary{
+    background-color: rgba(255, 166, 0, 0.785);
+    border-color:rgba(255, 166, 0, 0.785);
+}
+.btn-primary:hover{
+    background-color: rgba(99, 86, 62, 0.556);
+}
+img{
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 10%;
+    background-color: rgba(245, 222, 179, 0.726);
+    
+}
+
+img:hover {
+    box-shadow: rgba(255, 166, 0, 0.785);;
+    background-color: rgba(126, 114, 91, 0.622);
+    
+}
+
