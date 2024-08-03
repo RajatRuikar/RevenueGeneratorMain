@@ -49,6 +49,8 @@ import { EmployeeproductmanupulataionComponent } from './Component/employeeprodu
 import { EmployeeproductsearchComponent } from './Component/employeeproductsearch/employeeproductsearch.component';
 import { EmployeecustomerComponent } from './Component/employeecustomer/employeecustomer.component';
 import { EmployeeproductComponent } from './Component/employeeproduct/employeeproduct.component';
+import { RetailerdetailsComponent } from './Component/retailerdetails/retailerdetails.component';
+import { NavbarretailerComponent } from './Component/navbarretailer/navbarretailer.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +98,9 @@ import { EmployeeproductComponent } from './Component/employeeproduct/employeepr
     EmployeeproductmanupulataionComponent,
     EmployeeproductsearchComponent,
     EmployeecustomerComponent,
-    EmployeeproductComponent
+    EmployeeproductComponent,
+    RetailerdetailsComponent,
+    NavbarretailerComponent
   ],
   imports: [
     BrowserModule,
